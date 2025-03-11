@@ -10,7 +10,7 @@
     position: absolute;
     width: 100%;
     padding-left: 6%;
-    bottom: 0;
+    top: 30%;
 }
 .caption-img{
     width: 90%;
@@ -55,4 +55,6 @@
 }
 .more-cards{
     padding-left: 6%;
+    margin-top: 250px;
+   
 }
