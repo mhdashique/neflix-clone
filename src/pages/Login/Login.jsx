@@ -1,11 +1,13 @@
-import React, { useState } from 'react'
+import React, { useContext, useState } from 'react'
 import "./Login.css"
 import logo from '../../assets/logo.png'
-import { login,signup } from '../../firebase'
 import netflix_spinner from '../../assets/netflix_spinner.gif'
+import { authContext } from '../../ContextAPI'
 
 const Login = () => {
 
+
+  const {login,signup} = useContext(authContext)
   const [signState,setSignState] = useState("Sign In")
   const [name,setName] = useState('');
   const [email,setEmail] = useState('');
